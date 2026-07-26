@@ -1,0 +1,35 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* Tailwind Core Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Helper Utility Classes */
+@layer utilities {
+    /* Checkered Grid Background Pattern */
+    .bg-grid-pattern {
+        background-color: #0f1011;
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 60px 60px;
+    }
+
+    /* Custom Glowing Shadow for WhatsApp Buttons */
+    .shadow-glow {
+        box-shadow: 0 4px 30px rgba(30, 215, 96, 0.3);
+    }
+
+    /* Smooth Carousel Transitions for Gallery Page */
+    .carousel-slide {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .carousel-slide.active {
+        display: flex;
+        opacity: 1;
+    }
+}

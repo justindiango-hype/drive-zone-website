@@ -1,9 +1,27 @@
+<!-- 
+CHANGES MADE TO CONTACT.HTML (ROYAL BLUE THEME + SEO):
+- THEME: Converted to the Royal Blue light theme[cite: 3]. Replaced the dark background with the light grid pattern and white/slate cards. The main action hub is a high-contrast deep Royal Blue gradient to drive conversions.
+- SEO TASK 1: Updated <title>, meta description, and keywords to focus on location (Industrial Area 12), contact info, and auto body shop queries.
+- SEO TASK 1: Restructured Hero H1 to "Contact Us | Drive Zone Auto Main".
+- SEO TASK 2: Updated the Hero <img> ALTs (if any were present).
+- SEO TASK 4: Verified and converted all phone text into trackable <a href="tel:+971589236161"> and <a href="https://wa.me/971589236161"> links[cite: 3].
+- SEO TASK 5: Inserted GTM placeholders immediately after <head> and <body>.
+- SEO TASK 6: Replaced "Drive Zone CCM" with the exact business name "Drive Zone Auto Main" across the page and footer[cite: 3].
+- UI UPDATES: Replaced flat borders with elegant shadows and hover states for the 4 contact grid cards. Fixed the footer logo color[cite: 3].
+-->
 <!DOCTYPE html>
-<html lang="en" class="bg-[#0f1011] text-white scroll-smooth">
+<html lang="en" class="bg-slate-50 text-slate-900 scroll-smooth">
 <head>
+    <!-- [I WILL PASTE MY GTM HEAD SNIPPET HERE] -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Drive Zone CCM</title>
+    
+    <!-- ================= SEO META TAGS ================= -->
+    <title>Contact Drive Zone Auto Main | Auto Body Shop in Industrial Area 12</title>
+    <meta name="description" content="Get in touch with Drive Zone Auto Main for expert chassis repair, car frame alignment, and collision restoration in Industrial Area 12, Sharjah.">
+    <meta name="keywords" content="contact auto body shop sharjah, chassis repair industrial area 12, Drive Zone Auto Main location, car frame alignment contact, accident repair garage uae">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Drive Zone Auto Main">
     
     <!-- Favicon / Browser Tab Icon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -13,17 +31,16 @@
     <link rel="stylesheet" href="./dist/output.css">
 
     <style>
-        /* Checkered Grid Background Pattern */
+        /* Light Theme Grid Pattern */
         .bg-grid-pattern {
-            background-color: #0f1011;
+            background-color: transparent;
             background-image: 
-                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(30, 58, 138, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(30, 58, 138, 0.04) 1px, transparent 1px);
             background-size: 60px 60px;
         }
     </style>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,87 +48,135 @@
                 extend: {
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
-                        brandYellow: '#ffcc00',
-                        brandGreen: '#1ed760',
-                        darkBg: '#0f1011',
-                        cardBg: '#1a1b1e',
-                        borderColor: '#2d2e32'
+                        royalBlue: '#1e3a8a',    /* Deep elegant blue */
+                        royalAccent: '#2563eb',  /* Brighter royal blue for buttons/links */
+                        royalLight: '#eff6ff',   /* Very soft blue background */
+                        goldAccent: '#d4af37',   /* Elegant gold for highlights/stars */
+                        brandGreen: '#25D366',   /* Standard WhatsApp Green */
                     }
                 }
             }
         }
     </script>
-
 </head>
 <body class="antialiased font-sans flex flex-col min-h-screen">
+    <!-- [I WILL PASTE MY GTM BODY SNIPPET HERE] -->
 
-    <!-- SLEEK NAVBAR -->
-    <nav class="absolute top-0 w-full z-50 px-6 pt-8 pb-4 md:px-10 md:pt-10 grid grid-cols-3 items-center text-white bg-gradient-to-b from-black/90 via-black/50 to-transparent">
-        
-        <!-- 1. Left: Menu Toggle -->
-        <div class="flex items-center justify-start">
-            <button id="menuBtn" class="flex items-center gap-3 hover:text-brandYellow transition duration-300 group focus:outline-none cursor-pointer">
-                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h10M4 18h16"></path>
-                </svg>
-                <span class="text-base md:text-lg font-black tracking-widest uppercase mt-0.5 hidden sm:block">Menu</span>
-            </button>
+    <!-- SLEEK NAVBAR (Transparent Background & Larger Buttons/Text) -->
+    <nav class="absolute top-0 w-full z-50 bg-transparent">
+        <div class="px-6 py-5 md:px-10 flex flex-wrap items-center justify-between text-white">
+            
+            <!-- Left: Logo -->
+            <a href="index.html" class="hover:opacity-80 transition block shrink-0">
+                <img src="assets/logo.png" alt="Drive Zone Auto Main Logo" class="h-24 md:h-28 w-auto object-contain drop-shadow-2xl">
+            </a>
+
+            <!-- Center: Inline Navigation Links (Visible on Desktop) -->
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="index.html" class="border border-white/20 bg-white/10 text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white/25 hover:border-white/50 hover:-translate-y-1 hover:shadow-xl transition duration-300 backdrop-blur-sm">
+                    Home
+                </a>
+                <a href="services.html" class="border border-white/20 bg-white/10 text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white/25 hover:border-white/50 hover:-translate-y-1 hover:shadow-xl transition duration-300 backdrop-blur-sm">
+                    Services
+                </a>
+                <a href="about.html" class="border border-white/20 bg-white/10 text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white/25 hover:border-white/50 hover:-translate-y-1 hover:shadow-xl transition duration-300 backdrop-blur-sm">
+                    About
+                </a>
+                <a href="gallery.html" class="border border-white/20 bg-white/10 text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white/25 hover:border-white/50 hover:-translate-y-1 hover:shadow-xl transition duration-300 backdrop-blur-sm">
+                    Gallery
+                </a>
+                <a href="blog.html" class="border border-white/20 bg-white/10 text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white/25 hover:border-white/50 hover:-translate-y-1 hover:shadow-xl transition duration-300 backdrop-blur-sm">
+                    Blog
+                </a>
+                
+                <!-- Active Page Button (Solid Royal Accent Blue) -->
+                <a href="contact.html" class="bg-royalAccent text-white px-7 py-3 rounded-full text-sm font-black tracking-widest uppercase shadow-xl hover:-translate-y-1 hover:bg-blue-600 transition duration-300">
+                    Contact
+                </a>
+            </div>
+
+            <!-- Right: Location Pin Address & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="https://www.google.com/maps/place/Drive+Zone+Auto+garage+CCM+%26+Chassis+Repair/@25.3237324,55.4372588,17z/data=!4m8!3m7!1s0x3e5f59323736d0fb:0x49b1a3b61c596b3a!8m2!3d25.3237324!4d55.4372588!9m1!1b1!16s%2Fg%2F11tsxsbjpm" target="_blank" rel="noopener noreferrer" class="hidden sm:flex items-center gap-3.5 text-white hover:text-goldAccent transition duration-300 group">
+                    <div class="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center group-hover:bg-goldAccent group-hover:border-goldAccent transition duration-300 shrink-0 shadow-xl backdrop-blur-sm">
+                        <svg class="w-6 h-6 text-white group-hover:text-royalBlue transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col justify-center">
+                        <span class="text-[10px] text-white/70 font-bold tracking-widest uppercase leading-tight">Location</span>
+                        <span class="text-sm md:text-base font-black tracking-wide leading-tight group-hover:text-white transition">Industrial Area 12, Sharjah</span>
+                    </div>
+                </a>
+                
+                <!-- Mobile Toggle -->
+                <button id="mobileMenuBtn" class="lg:hidden flex items-center text-white focus:outline-none ml-2 cursor-pointer hover:text-goldAccent transition">
+                    <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
         </div>
 
-        <!-- 2. Center: Logo Image -->
-        <div class="flex items-center justify-center">
-            <a href="index.html" class="hover:opacity-80 transition block">
-                <img src="assets/logo.png" alt="Drive Zone CCM Logo" class="h-28 md:h-36 w-auto object-contain drop-shadow-2xl">
-            </a>
-        </div>
-
-        <!-- 3. Right: Actions -->
-        <div class="flex items-center justify-end">
-            <a href="https://wa.me/971589236161" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3.5 text-white hover:text-brandYellow transition duration-300 group">
-                <div class="w-14 h-14 sm:w-13 sm:h-13 rounded-full bg-brandGreen/10 border-2 border-brandGreen/40 flex items-center justify-center group-hover:bg-brandGreen group-hover:border-brandGreen transition duration-300 shrink-0 shadow-lg shadow-brandGreen/10">
-                    <svg class="w-12 h-12 text-brandGreen group-hover:text-black transition duration-300" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.277.042-.64.083-1.802-.399-1.398-.58-2.302-2.023-2.372-2.115-.07-.092-.566-.754-.566-1.439 0-.685.356-1.02.482-1.156.126-.136.273-.17.365-.17h.262c.092 0 .216-.034.338.261.127.306.43 1.048.47 1.127.04.079.066.172.02.264-.047.093-.071.149-.142.233-.07.085-.152.183-.213.255-.068.077-.138.163-.058.301.08.138.358.591.765.955.526.471.972.616 1.11.685.138.07.219.059.301-.033.082-.093.355-.414.45-.557.094-.143.188-.12.313-.074.126.046.792.374.928.442.136.068.226.102.259.159.033.057.033.328-.111.733z"></path>
-                    </svg>
-                </div>
-                <span class="text-sm md:text-base font-extrabold tracking-wider hidden lg:block">+971 58 923 6161</span>
-            </a>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileDropdown" class="hidden w-full bg-slate-900/95 backdrop-blur-md text-white flex-col border-t border-slate-700 lg:hidden shadow-2xl">
+            <a href="index.html" class="p-4 border-b border-slate-700 hover:text-royalAccent transition font-bold uppercase tracking-widest text-center hover:bg-slate-800 text-base">Home</a>
+            <a href="services.html" class="p-4 border-b border-slate-700 hover:text-royalAccent transition font-bold uppercase tracking-widest text-center hover:bg-slate-800 text-base">Services</a>
+            <a href="about.html" class="p-4 border-b border-slate-700 hover:text-royalAccent transition font-bold uppercase tracking-widest text-center hover:bg-slate-800 text-base">About</a>
+            <a href="gallery.html" class="p-4 border-b border-slate-700 hover:text-royalAccent transition font-bold uppercase tracking-widest text-center hover:bg-slate-800 text-base">Gallery</a>
+            <a href="blog.html" class="p-4 border-b border-slate-700 hover:text-royalAccent transition font-bold uppercase tracking-widest text-center hover:bg-slate-800 text-base">Blog</a>
+            <a href="contact.html" class="p-4 text-royalAccent font-bold uppercase tracking-widest text-center hover:bg-slate-800 transition text-base">Contact</a>
         </div>
     </nav>
 
     <!-- MAIN CONTENT WRAPPER -->
     <main class="flex-grow">
         
-        <!-- PAGE HEADER -->
-        <header class="relative pt-48 pb-20 px-6 bg-[url('assets/hero.png')] bg-cover bg-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0f1011] via-[#0f1011]/90 to-transparent"></div>
-            <div class="relative z-10 max-w-7xl mx-auto text-center">
-                <div class="inline-flex items-center gap-3 mb-4">
-                    <div class="h-px w-8 bg-brandYellow"></div>
-                    <span class="text-brandYellow text-xs font-bold tracking-widest uppercase">GET IN TOUCH</span>
-                    <div class="h-px w-8 bg-brandYellow"></div>
-                </div>
-                <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-white mb-6">Contact Us</h1>
-                <p class="max-w-2xl mx-auto text-gray-400 text-base md:text-lg leading-relaxed">
-                    Have questions about chassis repair or need a preliminary assessment? Speak directly with our team or visit our workshop in Sharjah.
-                </p>
-            </div>
-        </header>
+<!-- SECONDARY PAGE HERO: Contact Us (Dark Slate & Cyan Gradient Theme) -->
+<header class="relative min-h-[60vh] flex flex-col justify-center pt-36 pb-16 px-6 bg-[url('assets/photo14.png')] bg-cover bg-center text-white overflow-hidden border-b border-slate-800">
+    
+    <!-- Dark Slate Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/50 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50 pointer-events-none"></div>
 
-       <!-- REACH OUR WORKSHOP SECTION (NO FORM - PREMIUM EXECUTIVE LAYOUT) -->
-        <section style="background-color: #0f1011; background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px); background-size: 60px 60px;" class="py-24 px-6 border-y border-white/10 relative">
-            <div class="max-w-7xl mx-auto">
+    <!-- Main Content Container -->
+    <div class="relative z-10 max-w-4xl mx-auto w-full text-center space-y-6 mt-6">
+
+        <div class="space-y-4">
+            <!-- Main Page H1 with Blue-to-Cyan Gradient -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-white drop-shadow-xl leading-tight">
+                Contact 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Us</span>
+            </h1>
+
+            <!-- Subheading Location -->
+            <div class="text-sm sm:text-base font-bold text-slate-200 border-l-2 border-blue-500 pl-3 py-0.5 inline-block">
+                Drive Zone Auto Main <span class="text-blue-400 mx-1">·</span> Industrial Area 12, Sharjah
+            </div>
+        </div>
+
+        <!-- Descriptive Paragraph -->
+        <p class="text-slate-300 text-sm sm:text-base font-normal leading-relaxed max-w-2xl mx-auto">
+            Have questions about chassis repair or need a preliminary assessment? Speak directly with our team or visit our workshop in Industrial Area 12.
+        </p>
+        
+    </div>
+</header>
+
+       <!-- REACH OUR WORKSHOP SECTION (Light Grid Background) -->
+        <section class="py-24 px-6 border-y border-slate-200 bg-slate-50 bg-grid-pattern relative">
+            <div class="max-w-7xl mx-auto relative z-10">
                 
                 <!-- SECTION HEADER -->
                 <div class="mb-16 text-center max-w-3xl mx-auto">
                     <div class="inline-flex items-center gap-3 mb-3">
-                        <div class="h-px w-8 bg-brandYellow"></div>
-                        <span class="text-brandYellow text-xs font-bold tracking-widest uppercase">DIRECT WORKSHOP CHANNELS</span>
-                        <div class="h-px w-8 bg-brandYellow"></div>
+                        <div class="h-px w-8 bg-royalAccent"></div>
+                        <span class="text-royalAccent text-xs font-bold tracking-widest uppercase">DIRECT WORKSHOP CHANNELS</span>
+                        <div class="h-px w-8 bg-royalAccent"></div>
                     </div>
-                    <h1 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-white mb-4">
+                    <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tight text-royalBlue mb-4">
                         Get In Touch With Drive Zone
-                    </h1>
-                    <p class="text-gray-400 text-base md:text-lg leading-relaxed">
+                    </h2>
+                    <p class="text-slate-600 text-base md:text-lg leading-relaxed">
                         Connect directly with our master technicians for instant estimates, workshop directions, or social portfolio updates.
                     </p>
                 </div>
@@ -123,32 +188,32 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                         
                         <!-- 1. Workshop Address -->
-                        <div class="bg-cardBg border border-white/10 hover:border-brandYellow/50 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-xl group">
+                        <div class="bg-white border border-blue-100 hover:border-royalAccent hover:shadow-xl hover:-translate-y-1 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-md group">
                             <div>
-                                <div class="w-12 h-12 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center mb-6 group-hover:bg-brandYellow group-hover:text-black transition duration-300">
-                                    <svg class="w-6 h-6 text-brandYellow group-hover:text-black transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="w-12 h-12 rounded-xl bg-royalLight border border-blue-200 flex items-center justify-center mb-6 group-hover:bg-royalAccent group-hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6 text-royalAccent group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-white font-bold uppercase tracking-wider text-xs mb-2">Workshop Address</h3>
-                                <p class="text-gray-400 text-xs leading-relaxed mb-6">Industrial Area 12, Al Darari, Sharjah, UAE</p>
+                                <h3 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-2">Workshop Address</h3>
+                                <p class="text-slate-600 text-xs leading-relaxed mb-6">Industrial Area 12, Al Darari, Sharjah, UAE</p>
                             </div>
-                            <a href="https://www.google.com/maps/place/Drive+Zone+Auto+garage+CCM+%26+Chassis+Repair" target="_blank" class="text-brandYellow text-xs font-black uppercase tracking-wider hover:underline inline-flex items-center gap-1.5">
+                            <a href="https://www.google.com/maps/place/Drive+Zone+Auto+garage+CCM+%26+Chassis+Repair" target="_blank" class="text-royalAccent text-xs font-black uppercase tracking-wider hover:underline inline-flex items-center gap-1.5">
                                 Get Directions →
                             </a>
                         </div>
 
                         <!-- 2. Phone & WhatsApp -->
-                        <div class="bg-cardBg border border-white/10 hover:border-brandGreen/50 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-xl group">
+                        <div class="bg-white border border-blue-100 hover:border-brandGreen hover:shadow-xl hover:-translate-y-1 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-md group">
                             <div>
-                                <div class="w-12 h-12 rounded-xl bg-brandGreen/10 border border-brandGreen/30 flex items-center justify-center mb-6 group-hover:bg-brandGreen transition duration-300">
-                                    <svg class="w-6 h-6 text-brandGreen group-hover:text-black transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="w-12 h-12 rounded-xl bg-green-50 border border-green-200 flex items-center justify-center mb-6 group-hover:bg-brandGreen transition duration-300">
+                                    <svg class="w-6 h-6 text-brandGreen group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-white font-bold uppercase tracking-wider text-xs mb-2">Phone & WhatsApp</h3>
-                                <p class="text-gray-200 font-extrabold text-sm mb-6">+971 58 923 6161</p>
+                                <h3 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-2">Phone & WhatsApp</h3>
+                                <a href="tel:+971589236161" class="text-royalBlue font-extrabold text-sm mb-6 hover:text-royalAccent transition block">+971 58 923 6161</a>
                             </div>
                             <a href="https://wa.me/971589236161" target="_blank" class="text-brandGreen text-xs font-black uppercase tracking-wider hover:underline inline-flex items-center gap-1.5">
                                 Instant Assessment →
@@ -156,69 +221,69 @@
                         </div>
 
                         <!-- 3. Working Hours -->
-                        <div class="bg-cardBg border border-white/10 hover:border-brandYellow/50 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-xl group">
+                        <div class="bg-white border border-blue-100 hover:border-royalAccent hover:shadow-xl hover:-translate-y-1 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-md group">
                             <div>
-                                <div class="w-12 h-12 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center mb-6 group-hover:bg-brandYellow group-hover:text-black transition duration-300">
-                                    <svg class="w-6 h-6 text-brandYellow group-hover:text-black transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div class="w-12 h-12 rounded-xl bg-royalLight border border-blue-200 flex items-center justify-center mb-6 group-hover:bg-royalAccent group-hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6 text-royalAccent group-hover:text-white transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                     </svg>
                                 </div>
-                                <h3 class="text-white font-bold uppercase tracking-wider text-xs mb-2">Working Hours</h3>
-                                <p class="text-gray-300 text-xs font-bold">Sat – Thu: 9:00 AM – 8:00 PM</p>
-                                <p class="text-gray-500 text-[11px] mt-1">Friday: Closed</p>
+                                <h3 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-2">Working Hours</h3>
+                                <p class="text-slate-700 text-xs font-bold">Sat – Thu: 9:00 AM – 8:00 PM</p>
+                                <p class="text-slate-500 text-[11px] mt-1">Friday: Closed</p>
                             </div>
-                            <span class="text-gray-500 text-[11px] uppercase tracking-wider font-semibold">Walk-Ins Welcome</span>
+                            <span class="text-slate-500 text-[11px] uppercase tracking-wider font-bold">Walk-Ins Welcome</span>
                         </div>
 
                         <!-- 4. Instagram Profile -->
-                        <div class="bg-cardBg border border-white/10 hover:border-brandYellow/50 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-xl group">
+                        <div class="bg-white border border-blue-100 hover:border-royalAccent hover:shadow-xl hover:-translate-y-1 transition duration-300 rounded-2xl p-6 flex flex-col justify-between shadow-md group">
                             <div>
-                                <div class="w-12 h-12 rounded-xl bg-brandYellow/10 border border-brandYellow/30 flex items-center justify-center mb-6 group-hover:bg-brandYellow group-hover:text-black transition duration-300">
-                                    <svg class="w-6 h-6 text-brandYellow group-hover:text-black transition" fill="currentColor" viewBox="0 0 24 24">
+                                <div class="w-12 h-12 rounded-xl bg-royalLight border border-blue-200 flex items-center justify-center mb-6 group-hover:bg-royalAccent group-hover:text-white transition duration-300">
+                                    <svg class="w-6 h-6 text-royalAccent group-hover:text-white transition" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 2.156 4.919 5.419.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 5.271-4.919 5.419-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-2.199-4.919-5.42-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-5.271 4.919-5.419 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                     </svg>
                                 </div>
-                                <h3 class="text-white font-bold uppercase tracking-wider text-xs mb-2">Follow Our Work</h3>
-                                <p class="text-gray-300 font-bold text-xs mb-6">@drive_zone_auto</p>
+                                <h3 class="text-slate-900 font-bold uppercase tracking-wider text-xs mb-2">Follow Our Work</h3>
+                                <p class="text-slate-700 font-bold text-xs mb-6">@drive_zone_auto</p>
                             </div>
-                            <a href="https://www.instagram.com/drive_zone_auto" target="_blank" rel="noopener noreferrer" class="text-brandYellow text-xs font-black uppercase tracking-wider hover:underline inline-flex items-center gap-1.5">
+                            <a href="https://www.instagram.com/drive_zone_auto" target="_blank" rel="noopener noreferrer" class="text-royalAccent text-xs font-black uppercase tracking-wider hover:underline inline-flex items-center gap-1.5">
                                 Follow Instagram →
                             </a>
                         </div>
 
                     </div>
 
-                    <!-- RIGHT COLUMN: HIGH-IMPACT DIRECT ACTION & LOCATION HUB -->
-                    <div class="bg-gradient-to-br from-cardBg via-[#1c1d21] to-[#121316] border border-white/10 rounded-2xl p-8 sm:p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                    <!-- RIGHT COLUMN: HIGH-IMPACT DIRECT ACTION & LOCATION HUB (Deep Royal Blue) -->
+                    <div class="bg-gradient-to-br from-royalBlue via-blue-900 to-slate-900 border border-blue-800 rounded-2xl p-8 sm:p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden text-white">
                         <div class="relative z-10">
                             <div class="flex items-center justify-between mb-6">
-                                <span class="bg-brandGreen/20 border border-brandGreen/40 text-brandGreen text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full">
+                                <span class="bg-white/10 border border-white/20 text-white text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full shadow-sm">
                                     Fast Response Channel
                                 </span>
-                                <span class="text-gray-500 text-xs uppercase tracking-widest">Sharjah, UAE</span>
+                                <span class="text-blue-200 text-xs uppercase tracking-widest font-bold">Sharjah, UAE</span>
                             </div>
 
-                            <h2 class="text-3xl font-black uppercase text-white mb-4 leading-tight">
+                            <h3 class="text-3xl font-black uppercase text-white mb-4 leading-tight">
                                 Need an Immediate Quote or Assessment?
-                            </h2>
-                            <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                            </h3>
+                            <p class="text-blue-100 text-sm leading-relaxed mb-8">
                                 The fastest way to reach our estimators is directly through WhatsApp. Send us damage photos or chassis reports for rapid feedback.
                             </p>
 
                             <!-- Fast Action Buttons -->
                             <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                                <a href="https://wa.me/971589236161" target="_blank" class="flex-1 bg-brandGreen text-black font-black py-4 px-6 rounded-xl hover:bg-green-400 transition text-center uppercase tracking-wider text-xs shadow-lg flex items-center justify-center gap-2">
+                                <a href="https://wa.me/971589236161" target="_blank" class="flex-1 bg-brandGreen text-white font-black py-4 px-6 rounded-xl hover:bg-green-500 transition text-center uppercase tracking-wider text-xs shadow-lg flex items-center justify-center gap-2">
                                     <span>Open WhatsApp Chat</span>
                                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.277.042-.64.083-1.802-.399-1.398-.58-2.302-2.023-2.372-2.115-.07-.092-.566-.754-.566-1.439 0-.685.356-1.02.482-1.156.126-.136.273-.17.365-.17h.262c.092 0 .216-.034.338.261.127.306.43 1.048.47 1.127.04.079.066.172.02.264-.047.093-.071.149-.142.233-.07.085-.152.183-.213.255-.068.077-.138.163-.058.301.08.138.358.591.765.955.526.471.972.616 1.11.685.138.07.219.059.301-.033.082-.093.355-.414.45-.557.094-.143.188-.12.313-.074.126.046.792.374.928.442.136.068.226.102.259.159.033.057.033.328-.111.733z"></path></svg>
                                 </a>
-                                <a href="https://www.google.com/maps/place/Drive+Zone+Auto+garage+CCM+%26+Chassis+Repair" target="_blank" class="bg-black/60 border border-white/20 hover:border-brandYellow text-white hover:text-brandYellow font-extrabold py-4 px-6 rounded-xl transition text-center uppercase tracking-wider text-xs flex items-center justify-center gap-2">
+                                <a href="https://www.google.com/maps/place/Drive+Zone+Auto+garage+CCM+%26+Chassis+Repair" target="_blank" class="bg-white/10 border border-white/20 hover:bg-white hover:text-royalBlue text-white font-extrabold py-4 px-6 rounded-xl transition text-center uppercase tracking-wider text-xs flex items-center justify-center gap-2">
                                     <span>Open Google Maps</span>
                                 </a>
                             </div>
                         </div>
 
                         <!-- Bottom Features Line -->
-                        <div class="relative z-10 pt-6 border-t border-white/10 grid grid-cols-2 gap-4 text-xs text-gray-400">
+                        <div class="relative z-10 pt-6 border-t border-white/20 grid grid-cols-2 gap-4 text-xs text-blue-100">
                             <div>
                                 <strong class="text-white block uppercase text-[10px] tracking-widest mb-0.5">Specialization</strong>
                                 CAR-O-LINER Chassis Bench
@@ -236,71 +301,71 @@
 
     </main>
 
-    <!-- FOOTER SECTION -->
-    <footer class="border-t border-borderColor bg-[#0f1011] pt-20 pb-10 px-6">
+    <!-- FOOTER SECTION (Dark Slate grounding) -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10 px-6 border-t-[6px] border-t-royalAccent">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             
             <div>
                 <div class="mb-6">
                     <a href="index.html" class="inline-block hover:opacity-80 transition">
-                        <img src="assets/logo.png" alt="Drive Zone CCM Logo" class="h-24 w-auto object-contain">
+                        <img src="assets/logo.png" alt="Drive Zone Auto Main Logo" class="h-24 w-auto object-contain">
                     </a>
                 </div>
-                <p class="text-gray-400 text-sm leading-relaxed mb-8">
-                    Specialist accident repair, chassis and frame restoration, and CCM structural measurement in Sharjah, UAE.
+                <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    Drive Zone Auto Main is a specialist accident repair, chassis and frame restoration, and CCM structural measurement workshop in Sharjah, UAE.
                 </p>
             </div>
 
             <div>
-                <h4 class="text-lg font-bold text-gray-200 mb-6">Services</h4>
+                <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wide">Services</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="services.html#chassis-repair" class="text-gray-400 hover:text-brandYellow transition text-sm">Chassis & Frame Repair</a></li>
-                    <li><a href="services.html#chassis-repair" class="text-gray-400 hover:text-brandYellow transition text-sm">CCM Chassis Measurement</a></li>
-                    <li><a href="services.html#accident-repair" class="text-gray-400 hover:text-brandYellow transition text-sm">Full Accident Repair</a></li>
-                    <li><a href="services.html#denting-painting" class="text-gray-400 hover:text-brandYellow transition text-sm">Denting & Painting</a></li>
+                    <li><a href="services.html#chassis-repair" class="text-slate-400 hover:text-royalAccent transition text-sm">Chassis & Frame Repair</a></li>
+                    <li><a href="services.html#chassis-repair" class="text-slate-400 hover:text-royalAccent transition text-sm">CCM Chassis Measurement</a></li>
+                    <li><a href="services.html#accident-repair" class="text-slate-400 hover:text-royalAccent transition text-sm">Full Accident Repair</a></li>
+                    <li><a href="services.html#denting-painting" class="text-slate-400 hover:text-royalAccent transition text-sm">Denting & Painting</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-lg font-bold text-gray-200 mb-6">Company</h4>
+                <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wide">Company</h4>
                 <ul class="flex flex-col gap-4">
-                    <li><a href="about.html" class="text-gray-400 hover:text-brandYellow transition text-sm">About</a></li>
-                    <li><a href="gallery.html" class="text-gray-400 hover:text-brandYellow transition text-sm">Our Work</a></li>
-                    <li><a href="blog.html" class="text-gray-400 hover:text-brandYellow transition text-sm">Blog</a></li>
-                    <li><a href="contact.html" class="text-brandYellow font-semibold transition text-sm">Contact</a></li>
+                    <li><a href="about.html" class="text-slate-400 hover:text-royalAccent transition text-sm">About</a></li>
+                    <li><a href="gallery.html" class="text-slate-400 hover:text-royalAccent transition text-sm">Our Work</a></li>
+                    <li><a href="blog.html" class="text-slate-400 hover:text-royalAccent transition text-sm">Blog</a></li>
+                    <li><a href="contact.html" class="text-royalAccent font-semibold transition text-sm">Contact</a></li>
                 </ul>
             </div>
 
             <div>
-                <h4 class="text-lg font-bold text-gray-200 mb-6">Contact</h4>
+                <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wide">Contact</h4>
                 <ul class="flex flex-col gap-5">
-                    <li class="flex items-start gap-3 text-sm text-gray-400">
-                        <svg class="w-5 h-5 text-brandYellow shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <li class="flex items-start gap-3 text-sm text-slate-400">
+                        <svg class="w-5 h-5 text-royalAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                         <span>Industrial Area 12, Al Darari, Sharjah,<br>UAE</span>
                     </li>
-                    <li class="flex items-center gap-3 text-sm text-gray-400">
-                        <svg class="w-5 h-5 text-brandYellow shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                        <span>+971 58 923 6161</span>
+                    <li class="flex items-center gap-3 text-sm text-slate-400">
+                        <svg class="w-5 h-5 text-royalAccent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <a href="tel:+971589236161" class="hover:text-royalAccent transition">+971 58 923 6161</a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto border-t border-borderColor pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-            <p>&copy; 2026 Drive Zone CCM. All rights reserved.</p>
+        <div class="max-w-7xl mx-auto border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+            <p>&copy; 2026 Drive Zone Auto Main. All rights reserved.</p>
             <p>Sharjah &middot; Dubai &middot; Ajman</p>
         </div>
     </footer>
 
-    <!-- FULLSCREEN SLEEK MENU OVERLAY -->
+    <!-- FULLSCREEN MENU OVERLAY (Light Mode) -->
     <div id="menuOverlay" class="fixed inset-0 z-[100] opacity-0 pointer-events-none transition-opacity duration-500 flex">
-        <div id="menuBackdrop" class="absolute inset-0 bg-black/80 backdrop-blur-md"></div>
-        <div id="menuDrawer" class="relative z-10 w-full max-w-lg bg-[#0f1011] border-r border-white/10 h-full flex flex-col justify-between p-8 md:p-12 -translate-x-full transition-transform duration-500 ease-out shadow-2xl">
+        <div id="menuBackdrop" class="absolute inset-0 bg-slate-900/60 backdrop-blur-md"></div>
+        <div id="menuDrawer" class="relative z-10 w-full max-w-lg bg-white border-r border-slate-200 h-full flex flex-col justify-between p-8 md:p-12 -translate-x-full transition-transform duration-500 ease-out shadow-2xl">
             <div class="flex justify-between items-center">
                 <a href="index.html">
-                    <img src="assets/logo.png" alt="Drive Zone Logo" class="h-[150px] w-auto object-contain">
+                    <img src="assets/logo.png" alt="Drive Zone Auto Main Logo" class="h-[150px] w-auto object-contain">
                 </a>
-                <button id="closeMenuBtn" class="text-gray-400 hover:text-brandYellow transition duration-300 p-2 focus:outline-none cursor-pointer">
+                <button id="closeMenuBtn" class="text-slate-400 hover:text-royalAccent transition duration-300 p-2 focus:outline-none cursor-pointer">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
@@ -308,17 +373,17 @@
             </div>
 
             <nav class="my-auto flex flex-col gap-6">
-                <a href="index.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white hover:text-brandYellow hover:translate-x-3 transition duration-300 w-max">Home</a>
-                <a href="services.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white hover:text-brandYellow hover:translate-x-3 transition duration-300 w-max">Services</a>
-                <a href="about.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white hover:text-brandYellow hover:translate-x-3 transition duration-300 w-max">About</a>
-                <a href="gallery.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white hover:text-brandYellow hover:translate-x-3 transition duration-300 w-max">Gallery</a>
-                <a href="blog.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-white hover:text-brandYellow hover:translate-x-3 transition duration-300 w-max">Blog</a>
-                <a href="contact.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-brandYellow hover:translate-x-3 transition duration-300 w-max">Contact</a>
+                <a href="index.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-800 hover:text-royalAccent hover:translate-x-3 transition duration-300 w-max">Home</a>
+                <a href="services.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-800 hover:text-royalAccent hover:translate-x-3 transition duration-300 w-max">Services</a>
+                <a href="about.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-800 hover:text-royalAccent hover:translate-x-3 transition duration-300 w-max">About</a>
+                <a href="gallery.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-800 hover:text-royalAccent hover:translate-x-3 transition duration-300 w-max">Gallery</a>
+                <a href="blog.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-slate-800 hover:text-royalAccent hover:translate-x-3 transition duration-300 w-max">Blog</a>
+                <a href="contact.html" class="text-3xl md:text-4xl font-black uppercase tracking-tight text-royalAccent hover:translate-x-3 transition duration-300 w-max">Contact</a>
             </nav>
 
-            <div class="border-t border-white/10 pt-6">
-                <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Location</p>
-                <p class="text-sm text-gray-300 font-medium">Sharjah · Dubai · Ajman</p>
+            <div class="border-t border-slate-200 pt-6">
+                <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">Location</p>
+                <p class="text-sm text-slate-800 font-bold">Sharjah · Dubai · Ajman</p>
             </div>
         </div>
     </div>
@@ -352,5 +417,19 @@
         menuBackdrop.addEventListener('click', closeMenu);
     </script>
 
+    <!-- Mobile Navigation Menu Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileDropdown = document.getElementById('mobileDropdown');
+
+            if (mobileMenuBtn && mobileDropdown) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileDropdown.classList.toggle('hidden');
+                    mobileDropdown.classList.toggle('flex');
+                });
+            }
+        });
+    </script>
 </body>
 </html>

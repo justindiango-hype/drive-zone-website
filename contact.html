@@ -1,15 +1,15 @@
+<!DOCTYPE html>
 <!-- 
 CHANGES MADE TO CONTACT.HTML (ROYAL BLUE THEME + SEO):
-- THEME: Converted to the Royal Blue light theme[cite: 3]. Replaced the dark background with the light grid pattern and white/slate cards. The main action hub is a high-contrast deep Royal Blue gradient to drive conversions.
+- THEME: Converted to the Royal Blue light theme. Replaced the dark background with the light grid pattern and white/slate cards. The main action hub is a high-contrast deep Royal Blue gradient to drive conversions.
 - SEO TASK 1: Updated <title>, meta description, and keywords to focus on location (Industrial Area 12), contact info, and auto body shop queries.
 - SEO TASK 1: Restructured Hero H1 to "Contact Us | Drive Zone Auto Main".
 - SEO TASK 2: Updated the Hero <img> ALTs (if any were present).
-- SEO TASK 4: Verified and converted all phone text into trackable <a href="tel:+971589236161"> and <a href="https://wa.me/971589236161"> links[cite: 3].
+- SEO TASK 4: Verified and converted all phone text into trackable <a href="tel:+971589236161"> and <a href="https://wa.me/971589236161"> links.
 - SEO TASK 5: Inserted GTM placeholders immediately after <head> and <body>.
-- SEO TASK 6: Replaced "Drive Zone CCM" with the exact business name "Drive Zone Auto Main" across the page and footer[cite: 3].
-- UI UPDATES: Replaced flat borders with elegant shadows and hover states for the 4 contact grid cards. Fixed the footer logo color[cite: 3].
+- SEO TASK 6: Replaced "Drive Zone CCM" with the exact business name "Drive Zone Auto Main" across the page and footer.
+- UI UPDATES: Replaced flat borders with elegant shadows and hover states for the 4 contact grid cards. Fixed the footer logo color.
 -->
-<!DOCTYPE html>
 <html lang="en" class="bg-slate-50 text-slate-900 scroll-smooth">
 <head>
      <!-- Google Tag Manager -->
@@ -29,6 +29,22 @@ CHANGES MADE TO CONTACT.HTML (ROYAL BLUE THEME + SEO):
     <meta name="keywords" content="contact auto body shop sharjah, chassis repair industrial area 12, Drive Zone Auto Main location, car frame alignment contact, accident repair garage uae">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Drive Zone Auto Main">
+    <link rel="canonical" href="https://ccmdrivezone.ae/contact.html">
+
+    <!-- ============ OPEN GRAPH / SOCIAL MEDIA META TAGS ============ -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Drive Zone Auto Main | Auto Body Shop in Industrial Area 12">
+    <meta property="og:description" content="Get in touch with Drive Zone Auto Main for expert chassis repair, car frame alignment, and collision restoration in Industrial Area 12, Sharjah.">
+    <meta property="og:url" content="https://ccmdrivezone.ae/contact.html">
+    <meta property="og:site_name" content="Drive Zone Auto Main">
+    <meta property="og:image" content="https://ccmdrivezone.ae/assets/photo14.png">
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Drive Zone Auto Main | Auto Body Shop in Industrial Area 12">
+    <meta name="twitter:description" content="Get in touch with Drive Zone Auto Main for expert chassis repair, car frame alignment, and collision restoration in Industrial Area 12, Sharjah.">
+    <meta name="twitter:image" content="https://ccmdrivezone.ae/assets/photo14.png">
     
     <!-- Favicon / Browser Tab Icon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -423,9 +439,9 @@ CHANGES MADE TO CONTACT.HTML (ROYAL BLUE THEME + SEO):
             document.body.classList.remove('overflow-hidden');
         }
 
-        menuBtn.addEventListener('click', openMenu);
-        closeMenuBtn.addEventListener('click', closeMenu);
-        menuBackdrop.addEventListener('click', closeMenu);
+        if(menuBtn) menuBtn.addEventListener('click', openMenu);
+        if(closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+        if(menuBackdrop) menuBackdrop.addEventListener('click', closeMenu);
     </script>
 
     <!-- Mobile Navigation Menu Toggle Script -->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="bg-slate-50 text-slate-900 scroll-smooth">
 <head>
-     <!-- Google Tag Manager -->
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -184,7 +184,7 @@
         <div class="bg-slate-900/90 backdrop-blur-xl border border-slate-800/90 p-4 sm:p-5 rounded-2xl shadow-2xl max-w-3xl mx-auto mt-8 flex flex-col sm:flex-row gap-4 items-center">
             
             <!-- Click-to-Call Urgent Button -->
-            <a href="tel:+971551714927" title="Call Drive Zone Auto Garage Sharjah" class="bg-white hover:bg-slate-100 text-slate-900 px-5 py-3.5 flex items-center justify-between gap-4 transition duration-300 w-full shadow-lg rounded-xl group border border-slate-200">
+            <a href="tel:+971551714927" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CALL_LABEL'});" title="Call Drive Zone Auto Garage Sharjah" class="bg-white hover:bg-slate-100 text-slate-900 px-5 py-3.5 flex items-center justify-between gap-4 transition duration-300 w-full shadow-lg rounded-xl group border border-slate-200">
                 <div class="flex items-center gap-3.5">
                     <div class="bg-blue-600/10 p-2.5 rounded-lg border border-blue-600/20 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
                         <svg class="w-5 h-5 text-blue-600 group-hover:text-white transition duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -200,7 +200,7 @@
             </a>
 
             <!-- Send Accident Photos Button (WhatsApp Green) -->
-            <a href="https://wa.me/971551714927" target="_blank" rel="noopener noreferrer" title="Send accident photos for repair estimate on WhatsApp" class="bg-[#25D366] hover:bg-green-600 text-white font-bold px-6 py-4 flex items-center justify-center gap-3 transition duration-300 w-full shadow-lg rounded-xl h-full min-h-[64px]">
+            <a href="https://wa.me/971551714927" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/WHATSAPP_LABEL'});" rel="noopener noreferrer" title="Send accident photos for repair estimate on WhatsApp" class="bg-[#25D366] hover:bg-green-600 text-white font-bold px-6 py-4 flex items-center justify-center gap-3 transition duration-300 w-full shadow-lg rounded-xl h-full min-h-[64px]">
                 <svg class="w-5 h-5 fill-current text-white shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.296-.883-.647-1.479-1.446-1.652-1.743-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                 </svg>
@@ -212,31 +212,15 @@
     </div>
 </header>
 
-        <!-- BLOG LISTING SECTION (3 Articles Grid) -->
+        <!-- BLOG LISTING SECTION (3 Articles Grid with Direct Links) -->
         <section class="relative z-10 py-16 px-6 border-b border-slate-200 bg-slate-50 bg-grid-pattern">
             <div class="max-w-7xl mx-auto">
                 
-                <!-- Category Filter Tags -->
-                <div class="flex flex-wrap items-center gap-3 mb-12 border-b border-slate-200 pb-6">
-                    <button class="bg-royalAccent text-white font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider shadow-md">
-                        All Articles
-                    </button>
-                    <button onclick="showArticle('article1')" class="bg-white border border-slate-200 text-slate-600 hover:text-royalAccent hover:border-royalAccent font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition shadow-sm">
-                        Chassis Repair
-                    </button>
-                    <button onclick="showArticle('article2')" class="bg-white border border-slate-200 text-slate-600 hover:text-royalAccent hover:border-royalAccent font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition shadow-sm">
-                        CAR-O-LINER Tech
-                    </button>
-                    <button onclick="showArticle('article3')" class="bg-white border border-slate-200 text-slate-600 hover:text-royalAccent hover:border-royalAccent font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition shadow-sm">
-                        Accident Diagnostics
-                    </button>
-                </div>
-
-                <!-- 3 Blog Cards Grid -->
+                <!-- 3 Standalone Blog Cards Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Blog Card 1: What Is CCM Chassis Repair? -->
-                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md" onclick="showArticle('article1')">
+                    <a href="blog-what-is-ccm-chassis-repair.html" class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md">
                         <div class="h-60 w-full overflow-hidden relative bg-slate-100">
                             <img src="assets/blog1.jpeg" alt="CCM Chassis Repair Guide by Drive Zone Auto Main Sharjah" title="What Is CCM Chassis Repair?" loading="lazy" width="400" height="240" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md border border-slate-200 text-royalBlue text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-md shadow-sm">
@@ -257,23 +241,23 @@
                                 <span class="text-royalAccent group-hover:translate-x-1 transition duration-300">Read Article →</span>
                             </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Blog Card 2: CAR-O-LINER 3D Measuring -->
-                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md" onclick="showArticle('article2')">
+                    <!-- Blog Card 2: Chassis Repair vs Wheel Alignment -->
+                    <a href="blog-chassis-repair-vs-wheel-alignment.html" class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md">
                         <div class="h-60 w-full overflow-hidden relative bg-slate-100">
-                            <img src="assets/photo31.png" alt="CAR-O-LINER 3D electronic measuring technology at Drive Zone Auto Main" title="CAR-O-LINER 3D Frame Measuring Guide" loading="lazy" width="400" height="240" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="assets/photo28.png" alt="Chassis Repair vs Wheel Alignment comparison at Drive Zone Auto Main" title="Chassis Repair vs Wheel Alignment" loading="lazy" width="400" height="240" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md border border-slate-200 text-royalBlue text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-md shadow-sm">
-                                CAR-O-LINER Tech
+                                Diagnostics
                             </div>
                         </div>
                         <div class="p-8 flex-1 flex flex-col justify-between">
                             <div>
                                 <h2 class="text-xl font-bold uppercase tracking-tight text-slate-900 group-hover:text-royalAccent transition duration-300 mb-4 leading-snug">
-                                    How CAR-O-LINER 3D Measuring Restores Frames to Factory Specs
+                                    Chassis Repair vs. Wheel Alignment: Why Alignment Alone Isn't Enough
                                 </h2>
                                 <p class="text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3">
-                                    Discover how 3D electronic laser measuring benchmarks your car against original manufacturer tolerances to guarantee Tasjeel and RTA inspection passing.
+                                    Discover why standard wheel alignment adjustments fail when structural chassis frame damage exists following a car crash in the UAE.
                                 </p>
                             </div>
                             <div class="flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-semibold text-slate-500">
@@ -281,23 +265,23 @@
                                 <span class="text-royalAccent group-hover:translate-x-1 transition duration-300">Read Article →</span>
                             </div>
                         </div>
-                    </article>
+                    </a>
 
-                    <!-- Blog Card 3: 5 Signs Your Vehicle Needs Frame Straightening -->
-                    <article class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md" onclick="showArticle('article3')">
+                    <!-- Blog Card 3: Passing Tasjeel Inspection After an Accident -->
+                    <a href="blog-passing-tasjeel-after-accident.html" class="bg-white border border-slate-200 rounded-2xl overflow-hidden hover:border-royalAccent hover:shadow-xl transition duration-300 flex flex-col group cursor-pointer shadow-md">
                         <div class="h-60 w-full overflow-hidden relative bg-slate-100">
-                            <img src="assets/photo28.png" alt="Heavy frame pulling and accident diagnostics at Drive Zone Auto Main" title="5 Signs Your Car Needs Frame Straightening" loading="lazy" width="400" height="240" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="assets/photo11.png" alt="Passing Tasjeel Inspection guide after accident repair in Sharjah" title="Passing Tasjeel Inspection After Accident" loading="lazy" width="400" height="240" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md border border-slate-200 text-royalBlue text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-md shadow-sm">
-                                Safety & Diagnostics
+                                Inspection Passing
                             </div>
                         </div>
                         <div class="p-8 flex-1 flex flex-col justify-between">
                             <div>
                                 <h2 class="text-xl font-bold uppercase tracking-tight text-slate-900 group-hover:text-royalAccent transition duration-300 mb-4 leading-snug">
-                                    5 Warning Signs Your Vehicle Needs Professional Frame Straightening
+                                    How to Guarantee Passing Tasjeel Inspection After an Accident
                                 </h2>
                                 <p class="text-slate-600 text-sm leading-relaxed mb-6 line-clamp-3">
-                                    Is your car pulling to one side or wearing tyres unevenly? Learn the top 5 signs of hidden chassis damage after a collision in the UAE.
+                                    Learn how precision 3D electronic frame pulling ensures repaired collision vehicles satisfy Tasjeel, Shamil, and RTA technical registration standards.
                                 </p>
                             </div>
                             <div class="flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-semibold text-slate-500">
@@ -305,210 +289,11 @@
                                 <span class="text-royalAccent group-hover:translate-x-1 transition duration-300">Read Article →</span>
                             </div>
                         </div>
-                    </article>
+                    </a>
 
                 </div>
             </div>
         </section>
-
-        <!-- FULL ARTICLE DISPLAY SECTION -->
-        <section id="full-article" class="py-20 px-6 bg-white">
-            <div class="max-w-4xl mx-auto bg-white border border-slate-200 rounded-3xl p-8 md:p-16 shadow-2xl">
-                
-                <!-- ARTICLE 1 CONTENT -->
-                <div id="article1" class="article-content">
-                    <div class="mb-10 border-b border-slate-200 pb-10">
-                        <div class="inline-block bg-royalLight border border-blue-200 text-royalAccent text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-md mb-6">
-                            Chassis & Structural Repair Guide
-                        </div>
-                        <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-royalBlue mb-6 leading-tight">
-                            What Is CCM Chassis Repair? A Complete Guide for Sharjah Drivers
-                        </h1>
-                        <p class="text-slate-500 text-sm">Published by <strong class="text-slate-900">Drive Zone Auto Main Technical Team</strong> &middot; Sharjah, UAE</p>
-                    </div>
-
-                    <div class="rounded-2xl overflow-hidden mb-12 border border-slate-200 shadow-sm bg-slate-100">
-                        <img src="assets/blog1.jpeg" alt="CCM Chassis Repair Station at Drive Zone Auto Main Sharjah" title="CCM Chassis Repair Station" loading="lazy" width="800" height="450" class="w-full h-auto max-h-[500px] object-cover">
-                    </div>
-
-                    <div class="max-w-none text-slate-600 text-base md:text-lg leading-relaxed space-y-6">
-                        <p>
-                            A vehicle may look repaired after an accident, but cosmetic work alone does not confirm that its structure is safe. Even a relatively minor impact can shift a chassis or frame by a few millimetres—enough to affect steering, tyre wear, suspension geometry, and the way the vehicle responds in a future collision.
-                        </p>
-                        <p class="font-bold text-slate-900 text-xl">
-                            That is where CCM chassis repair becomes essential.
-                        </p>
-                        <p>
-                            At Drive Zone Auto Main, we understand that structural collision work requires more than visual inspection. Computerized Chassis Measurement (CCM) provides a precise way to inspect a vehicle’s underlying structure, identify hidden misalignment, and guide a professional repair process.
-                        </p>
-
-                        <hr class="border-slate-200 my-10">
-
-                        <h2 class="text-2xl md:text-3xl font-black uppercase text-royalBlue tracking-tight pt-4">
-                            What Does CCM Mean in Chassis Repair?
-                        </h2>
-                        <p>
-                            CCM or <strong class="text-slate-900">Computerized Chassis Measurement</strong> is a digital diagnostic process used to assess the dimensions and alignment of a vehicle’s chassis after an accident, impact, or suspected structural damage.
-                        </p>
-                        <p>
-                            Rather than relying only on visual checks, technicians use a computerized measuring system to compare key vehicle reference points against manufacturer specifications. The system can identify whether parts of the vehicle structure have moved, twisted, dropped, or shifted out of position.
-                        </p>
-                        
-                        <div class="bg-royalLight border-l-4 border-royalAccent p-6 rounded-r-xl my-8 shadow-sm">
-                            <p class="text-sm font-bold uppercase text-royalBlue mb-4">A CCM inspection can assess key areas such as:</p>
-                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 font-medium">
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Front and rear frame rails</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Suspension mounting points</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Subframe locations</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Shock towers</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Crossmembers</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Floor-pan reference points</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ARTICLE 2 CONTENT -->
-                <div id="article2" class="article-content hidden">
-                    <div class="mb-10 border-b border-slate-200 pb-10">
-                        <div class="inline-block bg-royalLight border border-blue-200 text-royalAccent text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-md mb-6">
-                            CAR-O-LINER Technology Guide
-                        </div>
-                        <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-royalBlue mb-6 leading-tight">
-                            How CAR-O-LINER 3D Measuring Restores Frames to Factory Specs
-                        </h1>
-                        <p class="text-slate-500 text-sm">Published by <strong class="text-slate-900">Drive Zone Auto Main Technical Team</strong> &middot; Sharjah, UAE</p>
-                    </div>
-
-                    <div class="rounded-2xl overflow-hidden mb-12 border border-slate-200 shadow-sm bg-slate-100">
-                        <img src="assets/photo31.png" alt="CAR-O-LINER 3D Electronic Frame Alignment Bench at Drive Zone Auto Main" title="CAR-O-LINER 3D Bench" loading="lazy" width="800" height="450" class="w-full h-auto max-h-[500px] object-cover">
-                    </div>
-
-                    <div class="max-w-none text-slate-600 text-base md:text-lg leading-relaxed space-y-6">
-                        <p>
-                            Modern vehicles are built with high-strength steel, aluminum alloys, and precise crumple zones designed to absorb crash impact energy. When a car suffers structural collision damage, unaligning even a fraction of an inch can alter the vehicle's safety profile and handling.
-                        </p>
-                        <p class="font-bold text-slate-900 text-xl">
-                            How the CAR-O-LINER 3D Electronic Measuring System Works:
-                        </p>
-                        <p>
-                            The CAR-O-LINER system utilizes computerized laser measuring arms coupled with vehicle-specific databases provided directly by car manufacturers. By benchmarking your damaged chassis against factory 3D blueprints down to 0.1mm tolerance, technicians at Drive Zone Auto Main can apply targeted hydraulic pulling to restore exact factory symmetry.
-                        </p>
-
-                        <div class="bg-royalLight border-l-4 border-royalAccent p-6 rounded-r-xl my-8 shadow-sm">
-                            <p class="text-sm font-bold uppercase text-royalBlue mb-4">Key Benefits of 3D Laser Frame Measuring:</p>
-                            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-700 font-medium">
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> 100% factory tolerance accuracy</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Real-time monitoring during hydraulic pulling</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Guaranteed Tasjeel/RTA inspection passing</li>
-                                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-royalAccent"></span> Restored suspension geometry & tyre wear</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ARTICLE 3 CONTENT -->
-                <div id="article3" class="article-content hidden">
-                    <div class="mb-10 border-b border-slate-200 pb-10">
-                        <div class="inline-block bg-royalLight border border-blue-200 text-royalAccent text-xs font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-md mb-6">
-                            Safety & Diagnostics
-                        </div>
-                        <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tight text-royalBlue mb-6 leading-tight">
-                            5 Warning Signs Your Vehicle Needs Professional Frame Straightening
-                        </h1>
-                        <p class="text-slate-500 text-sm">Published by <strong class="text-slate-900">Drive Zone Auto Main Technical Team</strong> &middot; Sharjah, UAE</p>
-                    </div>
-
-                    <div class="rounded-2xl overflow-hidden mb-12 border border-slate-200 shadow-sm bg-slate-100">
-                        <img src="assets/photo28.png" alt="Heavy frame pulling and accident diagnostics at Drive Zone Auto Main" title="5 Signs Your Car Needs Frame Straightening" loading="lazy" width="800" height="450" class="w-full h-auto max-h-[500px] object-cover">
-                    </div>
-
-                    <div class="max-w-none text-slate-600 text-base md:text-lg leading-relaxed space-y-6">
-                        <p>
-                            Not all accident damage is immediately obvious. While dented doors or cracked bumpers are easy to spot, structural chassis misalignment often remains hidden under the vehicle body until serious driving problems occur.
-                        </p>
-                        
-                        <div class="space-y-4 my-8">
-                            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 class="font-bold text-royalBlue text-lg mb-2">1. Vehicle Pulling to One Side</h3>
-                                <p class="text-sm text-slate-600">If your vehicle drifts left or right on straight roads even after a standard wheel alignment, a twisted or bent frame rail is often responsible.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 class="font-bold text-royalBlue text-lg mb-2">2. Uneven or Rapid Tyre Wear</h3>
-                                <p class="text-sm text-slate-600">When the chassis is out of square, tyres drag unevenly across the road surface, leading to premature tread wear and blowouts.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 class="font-bold text-royalBlue text-lg mb-2">3. Body Panel Gap Inconsistencies</h3>
-                                <p class="text-sm text-slate-600">Doors, bonnets, or boot lids sticking or showing uneven gaps indicate structural shift in the unibody structure.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 class="font-bold text-royalBlue text-lg mb-2">4. Unusual Noises & Steering Wheel Vibration</h3>
-                                <p class="text-sm text-slate-600">Creaking or squeaking sounds from under the chassis during turns or over speed bumps indicate stress on misaligned mounting points.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-                                <h3 class="font-bold text-royalBlue text-lg mb-2">5. Failed RTA or Tasjeel Inspection</h3>
-                                <p class="text-sm text-slate-600">UAE vehicle passing testing centers use laser chassis equipment to fail cars with unaddressed frame damage for safety reasons.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- JSON-LD BLOG SCHEMA FOR ALL 3 ARTICLES -->
-        <script type="application/ld+json">
-        [
-          {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "What Is CCM Chassis Repair? A Complete Guide for Sharjah Drivers",
-            "image": "https://ccmdrivezone.ae/assets/blog1.jpeg",
-            "author": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main",
-              "logo": "https://ccmdrivezone.ae/assets/logo.png"
-            },
-            "description": "Comprehensive guide on Computerized Chassis Measurement (CCM) and frame alignment after an accident."
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "How CAR-O-LINER 3D Measuring Restores Frames to Factory Specs",
-            "image": "https://ccmdrivezone.ae/assets/photo31.png",
-            "author": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main",
-              "logo": "https://ccmdrivezone.ae/assets/logo.png"
-            },
-            "description": "Technical guide explaining how CAR-O-LINER 3D laser measuring benchmarks vehicle chassis against OEM blueprints."
-          },
-          {
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            "headline": "5 Warning Signs Your Vehicle Needs Professional Frame Straightening",
-            "image": "https://ccmdrivezone.ae/assets/photo28.png",
-            "author": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Drive Zone Auto Main",
-              "logo": "https://ccmdrivezone.ae/assets/logo.png"
-            },
-            "description": "Learn the top 5 signs of hidden chassis damage after a car accident in Sharjah, Dubai, or Ajman."
-          }
-        ]
-        </script>
 
         <!-- BOTTOM WHATSAPP CTA -->
         <section class="relative py-24 px-6 bg-[url('assets/photo15.png')] bg-cover bg-center bg-fixed border-y border-blue-900">
@@ -529,10 +314,10 @@
                     </div>
                     
                     <div class="flex flex-col gap-4 shrink-0 w-full md:w-auto">
-                        <a href="https://wa.me/971551714927" target="_blank" rel="noopener noreferrer" title="Send accident photos for repair estimate on WhatsApp" aria-label="Send accident photos for repair estimate on WhatsApp" class="inline-flex items-center justify-center bg-brandGreen text-white font-extrabold px-8 py-4 rounded-lg hover:bg-green-500 transition shadow-lg uppercase tracking-wider text-xs md:text-sm">
+                        <a href="https://wa.me/971551714927" target="_blank" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/WHATSAPP_LABEL'});" rel="noopener noreferrer" title="Send accident photos for repair estimate on WhatsApp" aria-label="Send accident photos for repair estimate on WhatsApp" class="inline-flex items-center justify-center bg-brandGreen text-white font-extrabold px-8 py-4 rounded-lg hover:bg-green-500 transition shadow-lg uppercase tracking-wider text-xs md:text-sm">
                             Send Accident Photos
                         </a>
-                        <a href="tel:+971551714927" title="Call Drive Zone Auto Garage Sharjah" aria-label="Call Drive Zone Auto Garage Sharjah" class="inline-flex items-center justify-center gap-3 border border-blue-400 text-white font-bold px-6 py-4 rounded-lg hover:bg-white hover:text-royalBlue transition uppercase tracking-wider text-xs md:text-sm">
+                        <a href="tel:+971551714927" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/CALL_LABEL'});" title="Call Drive Zone Auto Garage Sharjah" aria-label="Call Drive Zone Auto Garage Sharjah" class="inline-flex items-center justify-center gap-3 border border-blue-400 text-white font-bold px-6 py-4 rounded-lg hover:bg-white hover:text-royalBlue transition uppercase tracking-wider text-xs md:text-sm">
                             <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                             <span>Call Drive Zone</span>
                         </a>
@@ -601,22 +386,6 @@
 
     <!-- INTERACTIVE SCRIPTS -->
     <script>
-        // Article Router Logic
-        function showArticle(articleId) {
-            // Hide all articles
-            document.querySelectorAll('.article-content').forEach(el => {
-                el.classList.add('hidden');
-            });
-            
-            // Show targeted article
-            const target = document.getElementById(articleId);
-            if (target) {
-                target.classList.remove('hidden');
-                document.getElementById('full-article').scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // Mobile Menu Toggle
         document.addEventListener('DOMContentLoaded', () => {
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileDropdown = document.getElementById('mobileDropdown');
